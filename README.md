@@ -28,6 +28,5 @@
    
 2. **Вывод структуры указанной директории с глубиной 2**:
     ```bash
-    Copy code
     python tree_util.py --directory "/path/to/folder" --level 2
     ```
