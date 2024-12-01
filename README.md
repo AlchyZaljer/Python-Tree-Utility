@@ -19,14 +19,67 @@
 - `-l` или `--level` (опционально):
   - Ограничивает глубину отображаемой структуры.
   - Пример: `--level 2` выведет только два уровня вложенности.
+ 
+### Запуск утилиты:
+    ```
+    python tree.py [options] [dir]
+    ```
 
 ## **Примеры использования**
-1. **Вывод структуры текущей директории**:
+
+1. **Запуск утилиты без опций с указанием пути**:
      ```bash
-     python tree_util.py
+     python3 tree.py ./test_data/
+    
+    ./test_data/
+    ├── books
+    │   ├── Dukaj_Other_songs.pdf
+    │   ├── Jonathan Strange & Mr Norrell.pdf
+    │   └── Piranesi.pdf
+    └── movies
+        ├── fantasy
+        │   ├── Edward Scissorhands.avi
+        │   ├── LOTR
+        │   │   └── The Two Towers.avi
+        │   └── Time Bandits.avi
+        └── sci-fy
+            ├── 12 Monkeys.avi
+            └── Blade runner.avi
+    
+    6 directories, 8 files
      ```
    
-2. **Вывод структуры указанной директории с глубиной 2**:
+2. **Запуск утилиты с указанием пути test_data и опцией для отображения только директорий**:
     ```bash
-    python tree_util.py --directory "/path/to/folder" --level 2
+    python3 tree.py -d test_data
+    
+    test_data
+    ├── books
+    └── movies
+        ├── fantasy
+        │   └── LOTR
+        └── sci-fy
+    
+    6 directories
+    ```
+
+3. **Запуск утилиты из корневой директории с опцией -L 1:**:
+    ```bash
+    python3 tree.py -L 1
+    
+    .
+    ├── bin
+    ├── boot
+    ├── dev
+    ├── etc
+    ├── home
+    ├── lib
+    ├── proc
+    ├── root
+    ├── sys
+    ├── tmp
+    ├── usr
+    └── var
+    
+    13 directories, 0 files
     ```
