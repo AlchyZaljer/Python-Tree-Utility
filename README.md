@@ -22,14 +22,14 @@
  
 ### Запуск утилиты:
 
-    `python tree.py [options] [dir]`
+    python tree.py [options] [dir]
 
 
 ## **Примеры использования**
 
 1. **Запуск утилиты без опций с указанием пути**:
      ```bash
-     python3 tree.py ./test_data/
+     python tree.py ./test_data/
     
     ./test_data/
     ├── books
@@ -51,7 +51,7 @@
    
 2. **Запуск утилиты с указанием пути test_data и опцией для отображения только директорий**:
     ```bash
-    python3 tree.py -d test_data
+    python tree.py -d test_data
     
     test_data
     ├── books
@@ -65,7 +65,7 @@
 
 3. **Запуск утилиты из корневой директории с опцией -L 1**:
     ```bash
-    python3 tree.py -L 1
+    python tree.py -L 1
     
     .
     ├── bin
