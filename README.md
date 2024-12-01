@@ -22,12 +22,12 @@
 
 ## **Примеры использования**
 1. **Вывод структуры текущей директории**:
-   ```bash
-   python tree_util.py
-   ```
+     ```bash
+     python tree_util.py
+     ```
    
 2. **Вывод структуры указанной директории с глубиной 2**:
-  ```bash
-  Copy code
-  python tree_util.py --directory "/path/to/folder" --level 2
-  ```
+    ```bash
+    Copy code
+    python tree_util.py --directory "/path/to/folder" --level 2
+    ```
